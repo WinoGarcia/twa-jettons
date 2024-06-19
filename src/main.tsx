@@ -5,7 +5,7 @@ import "./index.css";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 // this manifest is used temporarily for development purposes
 const manifestUrl =
-  "https://alefmanvladimir.github.io/twa-jettons/tonconnect-manifest.json";
+  "https://WinoGarcia.github.io/twa-jettons/tonconnect-manifest.json";
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false } },
