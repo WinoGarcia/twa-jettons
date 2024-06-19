@@ -1,1 +1,1 @@
-export * from '../../../twa-jettons/build/SampleJetton/tact_SampleJetton';
+export * from '../../../lesson10/build/SampleJetton/tact_SampleJetton';
