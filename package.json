@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://alefmanvladimir.github.io/my-twa",
+  "homepage": "https://WinoGarcia.github.io/twa-jettons",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

@@ -1,1 +1,1 @@
-export * from '../../../my-twa/build/SampleJetton/tact_JettonDefaultWallet';
+export * from '../../../twa-jettons/build/SampleJetton/tact_JettonDefaultWallet';
