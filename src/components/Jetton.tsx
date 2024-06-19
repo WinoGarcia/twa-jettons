@@ -1,17 +1,12 @@
 import { Address } from "ton-core";
 import { useJettonContract } from "../hooks/useJettonContract";
 import { useTonConnect } from "../hooks/useTonConnect";
-import {
-  Card,
-  FlexBoxCol,
-  FlexBoxRow,
-  Button,
-  Ellipsis,
-} from "./styled/styled";
+import { Card, FlexBoxCol, FlexBoxRow, Button, Ellipsis } from "./styled/styled";
+import JettonMintForm from "./JettonMintForm";
 
 export function Jetton() {
-  const {connected, wallet} = useTonConnect()
-  const {jettonWalletAddress, balance, mint} = useJettonContract()
+  const { wallet, connected } = useTonConnect();
+  const { jettonWalletAddress, balance, mint } = useJettonContract();
 
   return (
     <Card title="Jetton">
@@ -19,7 +14,7 @@ export function Jetton() {
         <h3>Jetton</h3>
         <FlexBoxRow>
           Wallet
-          <Ellipsis>{ wallet ? Address.parse(wallet as string).toString() : "Loading..."}</Ellipsis>
+          <Ellipsis>{wallet ? Address.parse(wallet as string).toString() : "Loading..."}</Ellipsis>
         </FlexBoxRow>
         <FlexBoxRow>
           Jetton Wallet
@@ -27,12 +22,10 @@ export function Jetton() {
         </FlexBoxRow>
         <FlexBoxRow>
           Balance
-          <div>{balance ?? "Loading..."}</div>
+          <Ellipsis>{balance ?? "Loading..."}</Ellipsis>
         </FlexBoxRow>
-        <Button
-          disabled={!connected} onClick={mint}>
-          Mint jettons
-        </Button>
+
+        <JettonMintForm connected={connected} mint={mint} />
       </FlexBoxCol>
     </Card>
   );
