@@ -895,4 +895,4 @@ PERFORMANCE OF THIS SOFTWARE.
 `,gH=to.div`
   max-width: 900px;
   margin: 0 auto;
-`;function yH(){const{network:e}=v0();return $r(mH,{children:$r(gH,{children:mo(wA,{children:[mo(pc,{children:[$r(a$,{}),$r(xA,{children:e?e===Gs.MAINNET?"mainnet":"testnet":"N/A"})]}),$r(vH,{})]})})})}const bH="https://alefmanvladimir.github.io/twa-jettons/tonconnect-manifest.json",wH=new cC({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});yg.createRoot(document.getElementById("root")).render($r(r$,{manifestUrl:bH,children:$r(yE,{client:wH,children:$r(yH,{})})}));
+`;function yH(){const{network:e}=v0();return $r(mH,{children:$r(gH,{children:mo(wA,{children:[mo(pc,{children:[$r(a$,{}),$r(xA,{children:e?e===Gs.MAINNET?"mainnet":"testnet":"N/A"})]}),$r(vH,{})]})})})}const bH="https://WinoGarcia.github.io/twa-jettons/tonconnect-manifest.json",wH=new cC({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});yg.createRoot(document.getElementById("root")).render($r(r$,{manifestUrl:bH,children:$r(yE,{client:wH,children:$r(yH,{})})}));
